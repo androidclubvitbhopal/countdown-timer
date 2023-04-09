@@ -5,12 +5,13 @@ body{
     position: fixed;
     width: 100%;
     height: 100%;
-    background-image: url('background.png');
+    /* background-image: url('background.png'); */
+    background-color: black;
     background-size: cover;
     background-repeat: no-repeat;
     z-index: 2;
     top:0%;
-    left:0%;
+    left:0%;  
 }
 #trigger{
     width:300px;
@@ -42,27 +43,86 @@ body{
     background-color: transparent;
     border: none;
 }
-#StartsIn{
+.logo-image{
+    position: absolute;
+    top: 8px;
+    right: 46px;
+    height: 140px;
+    width: 140px;
+}
+.vit-image{
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    height: 100px;
+    width: 250px;
+}
+.sprint-image{
+  
+
+    height: 300px;
+    width: 50%;
+}
+.front-container{
+  display: flex;
+  position: relative;
+  top: 15%;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.Text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
     align-self: center;
     font-size: 90px;
     text-align: center;
-    margin-top: 1%;
-    position: absolute;
-    left:20%;
-    background-color: white;
-    color: black;
+    margin-top: 0%;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 243, 243);
+
+}
+
+.title-text{
+  font-size: 50px;
+  color: rgb(255, 243, 243);
+}
+
+#StartsIn{
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    text-align: center;
+    margin-top: 15%;
+    font-size: 90px;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 243, 243);
     display: flex;
 }
+.st-in{
+  
+  font-size: 50px;
+  font-weight: 100;
+}
+.st-out{
+  font-size: 50px;
+  font-weight: 100;
+}
+/* #Endcountdown{
+  padding-top: 200px;
+} */
 #EndsIn{
-    align-self: center;
-    font-size: 80px;
-    text-align: center;
-    margin-top: 1%;
-    width: fit-content;
-    position: absolute;
-    left:23%;
-    background-color: white;
-    color: black;
-    display:flex;
-    visibility: hidden;
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 90px;
+  font-weight: 900;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 243, 243);
+  display: flex;
+  visibility: hidden;
 }

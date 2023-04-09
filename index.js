@@ -1,13 +1,12 @@
     // var endTime = new Date();
     // endTime.setHours(endTime.getHours() + 0);
     var countDownDate 
-    var startTime = new Date("Apr 10, 2023, 10:30:00").getTime();
+    var startTime = new Date("Apr 10, 2023, 01:30:00").getTime();
     var main = document.getElementById("Main")
     var smtbtn = document.getElementById('btn')
     var trigger = document.getElementById('trigger')
     var inputab = document.getElementById('inp')
     trigger.addEventListener("click",(event)=>{
-      console.log("hii")
       inputab.style.visibility = 'visible'
     })
     smtbtn.addEventListener("click",(event)=>{
@@ -15,7 +14,10 @@
       console.log(countDownDate)
       if(value != ""){
         temp = new Date(`Apr 10, 2023, ${value}`).getTime()
-        localStorage.setItem("endtime",temp)
+        localStorage.setItem("endtime",value)
+        temp = localStorage.getItem("endtime")
+        console.log("temp")
+
         countDownDate = new Date(`Apr 10, 2023, ${value}`).getTime()
         console.log(countDownDate)
         inputab.style.visibility = 'hidden'
@@ -23,7 +25,7 @@
     })
     window.onload = function(){
       temp = localStorage.getItem("endtime")
-      console.log(temp)
+      
       if(temp){
         countDownDate = new Date(`Apr 10, 2023, ${temp}`).getTime()
       }
@@ -60,6 +62,8 @@
       }
       if(distanceToEnd < 0){
         clearInterval(countdown);
-        end.innerHTML = "thank you!!";
+        var text = document.getElementById('st-out')
+        text.style.visibility = 'hidden'
+        end.innerHTML = "Thank You!";
       }
     }, 1000);

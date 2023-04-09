@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Countdown Timer</title>
+  <title>Front-end Sprint</title>
   <link rel="stylesheet" href="index.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,14 +9,30 @@
 </head>
 <body>
   <div class="main" id="Main">
+    <img src="logochhota.png" alt="alternatetext" class="vit-image">
+  
+    <img src="ac-logo.svg" alt="alternatetext" class="logo-image">
+   <div class="front-container">
+
+     <img src="front-end-sprint.svg" alt="alternatetext" class="sprint-image">
+
+  </div>
+    
+      <div id="Text">
+
         <div id="StartsIn">
-          <div>Starts In - </div>
+          <div class="st-in">Starting In</div>
           <div id="Startcountdown" class="CD"></div>
         </div>
         <div id="EndsIn">
-          <div>Ends In - </div>
+          <div id="st-out" class="st-out">Time Remaining </div>
           <div id="Endcountdown" class="CD"></div>
         </div>
+      </div>
+
+        
+    
+         
         <div class="input" id="inp">
           <input type="text" placeholder="Enter End Time (00:00:00 - format)" id="dateinp" required>
           <button id="btn">Set Time</button>
