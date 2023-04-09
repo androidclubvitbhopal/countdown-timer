@@ -16,13 +16,13 @@
             var seconds = Math.floor((distance % (1000 * 60)) / 1000);
       
             // Display the countdown in the HTML element
-            document.getElementById("countdown").innerHTML = hours + " h "
-              + minutes + " m " + seconds + " s ";
+            document.getElementById("countdown").innerHTML = hours + "h "
+              + minutes + "m " + seconds + "s ";
       
             // If the countdown is over, stop the interval
             if (distance < 0) {
               clearInterval(countdown);
-              document.getElementById("countdown").innerHTML = "The Event has Concluded!! thank you for your participation!!";
+              document.getElementById("countdown").innerHTML = "thank you";
             }
           }, 1000);
     }
