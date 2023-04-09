@@ -8,11 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@600&family=Golos+Text&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="main">
-    <div class="timerdiv">
-        <div id="countdown" class="CD">3h 00m 00s</div>
-        <button class="start" id="ST">START</button>
-    </div>
+  <div class="main" id="Main">
+        <div id="StartsIn">
+          <div>Starts In - </div>
+          <div id="Startcountdown" class="CD"></div>
+        </div>
+        <div id="EndsIn">
+          <div>Ends In - </div>
+          <div id="Endcountdown" class="CD"></div>
+        </div>
+        <div class="input" id="inp">
+          <input type="text" placeholder="Enter End Time (00:00:00 - format)" id="dateinp" required>
+          <button id="btn">Set Time</button>
+        </div>
+        <input type='button' id="trigger"></input>
   </div>
   <script src="index.js"></script>
 </body>
