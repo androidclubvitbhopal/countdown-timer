@@ -1,5 +1,5 @@
     var endTime = new Date();
-    endTime.setHours(endTime.getHours() + 0);
+    endTime.setHours(endTime.getHours() + 3);
     function real(){
         btn.style.display = 'none'
         var countdown = setInterval(function() {
