@@ -2,6 +2,7 @@
     var endTime = new Date();
     endTime.setHours(endTime.getHours() + 3);
     function real(){
+        btn.style.display = 'none'
         var countdown = setInterval(function() {
             // Get the current time
             var now = new Date().getTime();
