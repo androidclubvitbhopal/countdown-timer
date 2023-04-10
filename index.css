@@ -95,7 +95,7 @@ body{
     align-self: center;
     text-align: center;
     margin-top: 15%;
-    font-size: 90px;
+    font-size: 60px;
     font-weight: 900;
     background-color: rgb(0, 0, 0);
     color: rgb(255, 243, 243);
@@ -126,16 +126,18 @@ body{
   visibility: hidden;
 }
 .qr1{
-  width:800px;
-  height:800px;
+  margin-top: 7%;
+  width:250px;
+  height:250px;
   position: absolute;
-  top:30%;
+  top:35%;
   left:5%;
 }
 .qr2{
-  width:800px;
-  height:800px;
+  margin-top: 7%;
+  width:250px;
+  height:250px;
   position: absolute;
-  top:30%;
+  top:35%;
   left:70%;
 }
