@@ -102,12 +102,11 @@ body{
     display: flex;
 }
 .st-in{
-  
   font-size: 50px;
   font-weight: 100;
 }
 .st-out{
-  font-size: 50px;
+  font-size:50px;
   font-weight: 100;
 }
 /* #Endcountdown{
@@ -125,4 +124,18 @@ body{
   color: rgb(255, 243, 243);
   display: flex;
   visibility: hidden;
+}
+.qr1{
+  width:800px;
+  height:800px;
+  position: absolute;
+  top:30%;
+  left:5%;
+}
+.qr2{
+  width:800px;
+  height:800px;
+  position: absolute;
+  top:30%;
+  left:70%;
 }
