@@ -1,7 +1,7 @@
     // var endTime = new Date();
     // endTime.setHours(endTime.getHours() + 0);
     var countDownDate 
-    var startTime = new Date("Apr 10, 2023, 01:30:00").getTime();
+    var startTime = new Date("Apr 10, 2023, 10:30:00").getTime();
     var main = document.getElementById("Main")
     var smtbtn = document.getElementById('btn')
     var trigger = document.getElementById('trigger')
