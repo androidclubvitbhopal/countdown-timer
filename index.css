@@ -1,69 +1,81 @@
-body{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+/* Default styles for all screens */
+html, body {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
 }
-.main{
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    /* background-image: url('background.png'); */
-    background-color: black;
-    background-size: cover;
-    background-repeat: no-repeat;
-    z-index: 2;
-    top:0%;
-    left:0%;  
+body {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-#trigger{
-    width:300px;
-    height: 400px;
-    background-color: aliceblue;
-    position: absolute;
-    top:80%;
-}
-.input {
-    width:30%;
-    background-color: aqua;
-    height: 30%;
-    position: absolute;
-    top:20%;
-    left:35%;
-    visibility: hidden;
-}
-.input input{
-    width:90%;
-    padding: 2%;
-    margin: 2.5%;
-}
-.input button{
-    margin: 2.5%;
-    padding: 2%;
-}
-#trigger{
-    cursor: pointer;
-    background-color: transparent;
-    border: none;
-}
-.logo-image{
-    position: absolute;
-    top: 8px;
-    right: 46px;
-    height: 140px;
-    width: 140px;
-}
-.vit-image{
-    position: absolute;
-    top: 8px;
-    left: 46px;
-    height: 100px;
-    width: 250px;
-}
-.sprint-image{
-  
 
-    height: 300px;
-    width: 50%;
+.main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+  top: 0%;
+  left: 0%;  
 }
-.front-container{
+
+#trigger {
+  width: 300px;
+  height: 400px;
+  background-color: aliceblue;
+  position: absolute;
+  top: 80%;
+}
+
+.input {
+  width: 30%;
+  background-color: aqua;
+  height: 30%;
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  visibility: hidden;
+}
+
+.input input {
+  width: 90%;
+  padding: 2%;
+  margin: 2.5%;
+}
+
+.input button {
+  margin: 2.5%;
+  padding: 2%;
+}
+
+#trigger {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+}
+
+.logo-image {
+  position: absolute;
+  top: 8px;
+  right: 46px;
+  height: 140px;
+  width: 140px;
+}
+
+.vit-image {
+  position: absolute;
+  top: 8px;
+  left: 46px;
+  height: 100px;
+  width: 250px;
+}
+
+.sprint-image {
+  height: 300px;
+  width: 50%;
+}
+
+.front-container {
   display: flex;
   position: relative;
   top: 15%;
@@ -71,48 +83,47 @@ body{
   justify-content: center;
 }
 
-.Text{
+.Text {
   display: flex;
   flex-direction: column;
   justify-content: center;
-    align-self: center;
-    font-size: 90px;
-    text-align: center;
-    margin-top: 0%;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 243, 243);
-
+  align-self: center;
+  font-size: 90px;
+  text-align: center;
+  margin-top: 0%;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 243, 243);
 }
 
-.title-text{
+.title-text {
   font-size: 50px;
   color: rgb(255, 243, 243);
 }
 
-#StartsIn{
-    flex-direction: column;
-    justify-content: center;
-    align-self: center;
-    text-align: center;
-    margin-top: 15%;
-    font-size: 60px;
-    font-weight: 900;
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 243, 243);
-    display: flex;
+#StartsIn {
+  flex-direction: column;
+  justify-content: center;
+  align-self: center;
+  text-align: center;
+  margin-top: 15%;
+  font-size: 60px;
+  font-weight: 900;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 243, 243);
+  display: flex;
 }
-.st-in{
+
+.st-in {
   font-size: 50px;
   font-weight: 100;
 }
-.st-out{
-  font-size:50px;
+
+.st-out {
+  font-size: 50px;
   font-weight: 100;
 }
-/* #Endcountdown{
-  padding-top: 200px;
-} */
-#EndsIn{
+
+#EndsIn {
   flex-direction: column;
   justify-content: center;
   align-self: center;
@@ -125,19 +136,74 @@ body{
   display: flex;
   visibility: hidden;
 }
-.qr1{
-  margin-top: 7%;
-  width:250px;
-  height:250px;
+
+/* QR code styles for full HD resolution (1920 x 1080) */
+.qr1 {
+  margin-top: -5%;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top:35%;
-  left:5%;
+  top: 35%;
+  left: 5%;
 }
-.qr2{
-  margin-top: 7%;
-  width:250px;
-  height:250px;
+
+.qr2 {
+  margin-top: -5%;
+  width: 200px;
+  height: 200px;
   position: absolute;
-  top:35%;
-  left:70%;
+  top: 35%;
+  left: 80%;
 }
+
+.qr3 {
+  margin-top: 15%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 35%;
+  left: 5%;
+}
+
+.qr4 {
+  margin-top: 15%;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 35%;
+  left: 80%;
+}
+
+/* QR code styles for 1024 x 1024 resolution */
+@media (max-width: 1024px) and (max-height: 1024px) {
+  .qr1,
+  .qr2,
+  .qr3,
+  .qr4 {
+    width: 160px;
+    height: 160px;
+  }
+  
+  .qr1 {
+    top: 45%;
+    left: 5%;
+  }
+  
+  .qr2 {
+    top:45%;
+    left:77%;
+  }
+  
+  .qr3 {
+    top:47%;
+    left:5%;
+  }
+  
+  .qr4 {
+    top:47%;
+    left:77%;
+  }
+}
+
+
+

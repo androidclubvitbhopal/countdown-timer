@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Front-end Sprint</title>
+  <title>Bugoff: The Ultimate App/Website Development Challenge</title>
   <link rel="stylesheet" href="index.css"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Dosis:wght@600&family=Golos+Text&family=Montserrat:wght@300&family=Open+Sans:ital,wght@1,500&family=Raleway:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
   <div class="main" id="Main">
     <img src="logochhota.png" alt="alternatetext" class="vit-image">
-    <img class='qr1' src="AssetsQR (1).png">
-    <img class='qr2' src="FigmaDesign.png">
+    <img class="qr1" src="AssetsQR (1).png">  
+    <p class="qr1-text">React JS</p>
+    <img class="qr2" src="FigmaDesign.png">
+    <img class="qr3" src="AssetsQR (1).png">
+    <img class="qr4" src="FigmaDesign.png">
     <img src="ac-logo.svg" alt="alternatetext" class="logo-image">
    <div class="front-container">
 
-     <img src="front-end-sprint.svg" alt="alternatetext" class="sprint-image">
+     <img src="background.png" alt="alternatetext" class="sprint-image">
 
   </div>
       <div id="Text">
@@ -32,8 +36,18 @@
         <input type="text" placeholder="Enter End Time (00:00:00 - format)" id="dateinp" required>
         <button id="btn">Set Time</button>
       </div>
-      <input type='button' id="trigger"></input>
+      
+        <input type="button" id="trigger"></input>
+      
   </div>
   <script src="index.js"></script>
+  <script>
+    const resizeOps = () => {
+      document.documentElement.style.setProperty("--vh", window.innerHeight * 0.01 + "px");
+    };
+  
+    resizeOps();
+    window.addEventListener("resize", resizeOps);
+  </script>
 </body>
 </html>

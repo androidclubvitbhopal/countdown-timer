@@ -1,7 +1,7 @@
     // var endTime = new Date();
     // endTime.setHours(endTime.getHours() + 0);
     var countDownDate 
-    var startTime = new Date("Apr 10, 2023, 10:30:00").getTime();
+    var startTime = new Date("May 15, 2023, 10:00:00").getTime();
     var main = document.getElementById("Main")
     var smtbtn = document.getElementById('btn')
     var trigger = document.getElementById('trigger')
@@ -18,7 +18,7 @@
         temp = localStorage.getItem("endtime")
         console.log("temp")
 
-        countDownDate = new Date(`Apr 10, 2023, ${value}`).getTime()
+        countDownDate = new Date(`May 15, 2023, ${value}`).getTime()
         console.log(countDownDate)
         inputab.style.visibility = 'hidden'
       }
@@ -27,10 +27,10 @@
       temp = localStorage.getItem("endtime")
       
       if(temp){
-        countDownDate = new Date(`Apr 10, 2023, ${temp}`).getTime()
+        countDownDate = new Date(`May 15, 2023, ${temp}`).getTime()
       }
       else{
-        countDownDate = new Date(`Apr 10, 2023, 13:30:00`).getTime()
+        countDownDate = new Date(`May 15, 2023, 16:00:00`).getTime()
       }
     }
     // function real(){
