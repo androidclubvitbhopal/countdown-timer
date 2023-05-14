@@ -27,10 +27,11 @@
       temp = localStorage.getItem("endtime")
       
       if(temp){
-        countDownDate = new Date(`May 15, 2023, ${temp}`).getTime()
+        countDownDate = new Date(`May 15, 2023, 17:00:00`).getTime()
+        
       }
       else{
-        countDownDate = new Date(`May 15, 2023, 16:00:00`).getTime()
+        countDownDate = new Date(`May 15, 2023, ${temp}`).getTime()
       }
     }
     // function real(){
