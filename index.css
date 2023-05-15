@@ -6,6 +6,11 @@ html, body {
 body {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
+.hidden {
+  /* display: none; */
+  visibility: hidden;
+}
+
 
 .main {
   position: fixed;
@@ -145,6 +150,7 @@ body {
   position: absolute;
   top: 35%;
   left: 5%;
+  visibility: hidden;
 }
 
 .qr2 {
@@ -154,6 +160,7 @@ body {
   position: absolute;
   top: 35%;
   left: 80%;
+  visibility: hidden;
 }
 
 .qr3 {
@@ -163,6 +170,7 @@ body {
   position: absolute;
   top: 35%;
   left: 5%;
+  visibility: hidden;
 }
 
 .qr4 {
@@ -172,6 +180,7 @@ body {
   position: absolute;
   top: 35%;
   left: 80%;
+  visibility: hidden;
 }
 
 /* QR code styles for 1024 x 1024 resolution */
