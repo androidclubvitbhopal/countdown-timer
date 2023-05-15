@@ -144,21 +144,21 @@ body {
 
 /* QR code styles for full HD resolution (1920 x 1080) */
 .qr1 {
-  margin-top: -5%;
-  width: 200px;
-  height: 200px;
+  margin-top: 7%;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 5%;
   visibility: hidden;
 }
 
 .qr2 {
-  margin-top: -5%;
-  width: 200px;
-  height: 200px;
+  margin-top: 7%;
+  width: 250px;
+  height: 250px;
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 80%;
   visibility: hidden;
 }
