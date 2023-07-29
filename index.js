@@ -1,7 +1,7 @@
     // var endTime = new Date();
     // endTime.setHours(endTime.getHours() + 0);
     var countDownDate 
-    var startTime = new Date("jul 29, 2023, 19:16:00").getTime();
+    var startTime = new Date("jul 29, 2023, 19:20:00").getTime();
     var main = document.getElementById("Main")
     var smtbtn = document.getElementById('btn')
     var trigger = document.getElementById('trigger')
@@ -31,7 +31,7 @@
         
       }
       else{
-        countDownDate = new Date(`jul 29, 2023, 19:16:30`).getTime()
+        countDownDate = new Date(`jul 29, 2023, 19:20:30`).getTime()
       }
     }
     // function real(){
