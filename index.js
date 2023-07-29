@@ -1,7 +1,7 @@
     // var endTime = new Date();
     // endTime.setHours(endTime.getHours() + 0);
     var countDownDate 
-    var startTime = new Date("May 15, 2023, 14:50:00").getTime();
+    var startTime = new Date("jul 29, 2023, 19:16:00").getTime();
     var main = document.getElementById("Main")
     var smtbtn = document.getElementById('btn')
     var trigger = document.getElementById('trigger')
@@ -31,7 +31,7 @@
         
       }
       else{
-        countDownDate = new Date(`May 15, 2023, ${temp}`).getTime()
+        countDownDate = new Date(`jul 29, 2023, 19:16:30`).getTime()
       }
     }
     // function real(){
@@ -60,6 +60,20 @@
       if (distanceToStart < 0) {
         stdiv.style.display='none'
         enddiv.style.visibility = 'visible'
+      }
+      if (distanceToStart <= 10000 && distanceToStart > 0) {
+        // Play the start sound
+        console.log("start")
+        var startAudio = document.getElementById("startSound");
+        startAudio.play();
+      }
+    
+      // Check if there are 10 seconds left for the event to end
+      if (distanceToEnd <= 10000 && distanceToEnd > 0) {
+        // Play the end sound
+        console.log("end")
+        var endAudio = document.getElementById("endSound");
+        endAudio.play();
       }
       if(distanceToEnd < 0){
         clearInterval(countdown);
